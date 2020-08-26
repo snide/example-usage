@@ -1,0 +1,46 @@
+---
+id: exampleLogs
+slug: /example/logs
+title: Monitor server health and performance with the Elastic Stack
+summary: Learn how to add your logs to Elasticsearch and then query and visualize them in Kibana
+date: 2020-07-08
+tags: ['observability','kibana','elasticsearch','beats']
+---
+
+## What you'll learn
+
+Being able to diagnose and resolve server issues before they affect users is critical to your success. This guide describes how to bring your server logs, metrics, and other operational data together in a single stack so you can monitor and react to events happening anywhere in your environment.
+
+* Collect logs and metrics from Apache servers
+* Centralize the data in the Elastic Stack
+* Explore the data in real-time using Observability's logging applications
+
+This guide uses Apache as an example, but the steps apply to monitoring other server types.
+
+#### Prerequisites
+
+You will need have a rough understanding of how Elastic works, and have the Stack running. [A trial account](/blah) will be sufficient for this exercise, and should only take three minutes to set up.
+
+## Add an apache integration
+
+The best way to get logs and metrics into the Elastic stack is by using the <DocLink id="exampleIngestManager" tooltip /> in Kibana. You start by browsing a catalog of integrations that include default configurations and dashboards to get you up and running quickly.
+
+<EuiButton href="" iconType="logoElastic">Launch the ingest manager</EuiButton>
+
+#### Click **Apache** to see more details about it, then click Add **Apache**.
+
+![ingest manager](https://snid.es/2020AUG/odmqXo2~nY1Nkrnz.png)
+
+2. On the Add Apache integration page, click the default agent configuration to select it.
+* You use agent configurations to manage settings across a group of agents. In this guide, you select the default configuration that Kibana created for you. After you learn the basics, you can create your own configurations and assign them to agents.
+3. Under Configure integration, make sure the log paths are correct for your host, and inspect or change other settings.
+
+## Send logs and metrics to Elastic Stack
+
+## Confirm data is streaming
+
+## Observe!
+### View your dashboard
+### Tail logs within Logs UI
+
+## Next steps
